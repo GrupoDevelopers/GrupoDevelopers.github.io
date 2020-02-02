@@ -1,0 +1,121 @@
+/* Developers Site v.1.0 */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+/*** Navbar ***/
+
+.navbox {
+    background-color: #315fb4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 199;
+    transition: all .5s ease !important;
+    min-height: 52px;
+    padding: .4rem;
+}
+
+.nav-brand {
+    margin-left: 1.27rem;
+}
+
+.brand-name {
+    position: absolute;
+    top: 11px;
+    left: 4.55rem;
+    color: whitesmoke;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.box-burger {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 1.2rem;
+    background: transparent;
+}
+
+#toggle-menu {
+    cursor: pointer;
+    height: 36px;
+}
+
+/* Nav List */
+
+.nav-list {
+    min-width: 25%;
+}
+
+.nav-list ul {
+    display: flex;
+    justify-content: space-between !important;
+    padding-left: 1.5rem;
+    padding-right: 2rem;
+}
+
+.nav-list ul li {
+    list-style: none;
+}
+
+.nav-list ul li a {
+    color: white;
+    font-size: 1.28rem;
+    text-decoration: none;
+    transition: all 150ms ease-in-out;
+}
+
+.nav-list ul li a:hover {
+    color: #adff2f;
+    opacity: .8;
+    text-decoration: underline;
+}
+
+/** Menu Mobile **/
+
+@media (max-width: 768px){
+
+    /* NavBox List */
+
+    .nav-list {
+        background: inherit;
+        position: absolute;
+        top: 65px;
+        right: 0;
+        width: 100%;
+        height: 100vh;
+        z-index: 270;
+        display: none;
+    }
+
+    .toggle-list {
+        display: block;
+    }
+
+    .nav-list ul {
+        display: block;
+        line-height: 3;
+        text-align: center;
+    }
+
+}
+
+/* Btn Large (None) */
+@media (min-width: 768.1px){
+
+    .box-burger {
+        display: none;
+    }
+
+}
