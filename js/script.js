@@ -2,14 +2,24 @@
 
 // MENU MOBILE
 
-const toggleNavList = document.getElementById('toggle-menu');
-toggleNavList.addEventListener('click', toggleMenu);
+// Get 'Btn Open'
+const btnOpenMenu = document.querySelector('#open-menu')
 
-const navBrand = document.querySelector('.nav-brand');
+// Get NavList
+const navList = document.querySelector('.nav-list')
 
-const navList = document.querySelector('.nav-list');
 
-function toggleMenu() {
-    navList.classList.toggle('toggle-list')
-    navBrand.classList.toggle('d-none')  
-}
+// Function Open
+btnOpenMenu.addEventListener('click', ()=> {
+
+    navList.style.right = '0'
+
+})
+
+// Function Close
+
+navList.addEventListener('click', ()=> {
+
+    navList.style.right = '-100%'
+   
+})

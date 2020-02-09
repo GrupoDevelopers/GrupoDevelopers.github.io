@@ -9,6 +9,7 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 1.1rem;
     font-weight: 600;
+    overflow-x: hidden;
 }
 
 /*** Navbar ***/
@@ -20,7 +21,6 @@ body {
     align-items: center;
     position: relative;
     z-index: 199;
-    transition: all .5s ease !important;
     min-height: 52px;
     padding: .4rem;
 }
@@ -47,7 +47,7 @@ body {
     background: transparent;
 }
 
-#toggle-menu {
+#open-menu {
     cursor: pointer;
     height: 36px;
 }
@@ -55,7 +55,8 @@ body {
 /* Nav List */
 
 .nav-list {
-    min-width: 25%;
+    min-width: 35%;
+    transition: all .5s;
 }
 
 .nav-list ul {
@@ -73,7 +74,7 @@ body {
     color: white;
     font-size: 1.28rem;
     text-decoration: none;
-    transition: all 150ms ease-in-out;
+    transition: all .2s;
 }
 
 .nav-list ul li a:hover {
@@ -86,17 +87,27 @@ body {
 
 @media (max-width: 768px){
 
+    /* Nav Brand */
+    .nav-brand {
+        margin-left: .4rem;
+    }
+
+    .brand-name {
+        top: 13px;
+        left: 3.5rem;
+        font-size: 1.5rem;
+    }
+
     /* NavBox List */
 
     .nav-list {
         background: inherit;
         position: absolute;
-        top: 65px;
-        right: 0;
+        top: 0;
+        right: -100%;
         width: 100%;
         height: 100vh;
         z-index: 270;
-        display: none;
     }
 
     .toggle-list {
@@ -140,12 +151,26 @@ header {
     z-index: 108;
 }
 
+.logo-telegram {
+    height: 100px;
+}
+
 .box-logo h2 {
     font-size: 3rem;
     margin-left: 1rem;
     text-shadow: 2px 2px 2px rgb(43, 41, 41);
 }
 
-.logo-telegram {
-    height: 100px;
+/* Hero Mobile */
+@media (max-width: 768px){
+
+    .logo-telegram {
+        height: 80px;
+        padding-left: 10px;
+    }
+
+    .box-logo h2 {
+        font-size: 2rem;
+    }
+
 }
