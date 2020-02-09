@@ -119,3 +119,33 @@ body {
     }
 
 }
+
+/* Header */
+
+header {
+    display: flex;
+    justify-content: center;
+    height: 75vh;
+    background-image: url(../imgs/keys-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.box-logo {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 30vh;
+    color: cornsilk;
+    z-index: 108;
+}
+
+.box-logo h2 {
+    font-size: 3rem;
+    margin-left: 1rem;
+    text-shadow: 2px 2px 2px rgb(43, 41, 41);
+}
+
+.logo-telegram {
+    height: 100px;
+}
