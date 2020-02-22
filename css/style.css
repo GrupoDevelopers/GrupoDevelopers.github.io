@@ -29,6 +29,10 @@ i {
     font-weight: 600;
 }
 
+ul li {
+    list-style: none;
+}
+
 /*** Navbar ***/
 
 .navbox {
@@ -193,13 +197,13 @@ header {
 }
 
 /* Sections */
-.section-about, .section-devbot {
+.section-about, .section-devbot, .section-rules {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 17rem;
-    padding: 1.5rem;
+    padding: 2rem;
 }
 
 @media (min-width: 992px){
@@ -208,14 +212,14 @@ header {
     }
 }
 
-/* About Section */
+/* About/Rules Section */
 
-.section-about {
+.section-about, .section-rules {
     background: #3939b1;
     color: white;
 }
 
-.section-about p {
+.section-about, .section-rules p {
     font-size: 24px;
     font-weight: 300;
 }
@@ -230,3 +234,35 @@ header {
     font-size: 17px;
     font-weight: 400;
 }
+
+/* Rules Section */
+
+.section-rules ul li {
+    display: flex;
+    margin-bottom: 9px;
+}
+
+.section-rules span {
+    margin-left: 1rem;
+}
+
+footer {
+    background: #343a40;
+    color: aliceblue;
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
