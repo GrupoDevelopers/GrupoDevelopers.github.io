@@ -33,6 +33,16 @@ ul li {
     list-style: none;
 }
 
+a {
+    text-decoration: none;
+    transition: all .2s;
+}
+
+a:hover {
+    color: rgb(68, 68, 235);
+    text-decoration: underline;
+}
+
 /*** Navbar ***/
 
 .navbox {
@@ -224,12 +234,13 @@ header {
     font-weight: 300;
 }
 
-/* Devbot Section */
-.section-devbot {
+
+/* Devbot/Names Section */
+.section-devbot, .section-names {
     background: #eff7f1;
 }
 
-.section-devbot p {
+.section-devbot, .section-names p {
     color: #343a40;
     font-size: 17px;
     font-weight: 400;
@@ -246,6 +257,37 @@ header {
     margin-left: 1rem;
 }
 
+/* Names Section */
+.section-names {
+    display: flex;
+    justify-content: space-around;
+    min-height: 17rem;
+    padding: 2rem;
+}
+
+.section-names div {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.section-names h2 {
+    color: #343a40;
+}
+
+.section-names ul li {
+    padding-bottom: 8px;
+}
+
+.section-names ul li a {
+    font-size: 20px;
+}
+
+@media (max-width: 992px){
+    .section-names {
+        flex-direction: column;
+    }
+}
+
 footer {
     background: #343a40;
     color: aliceblue;
@@ -255,6 +297,14 @@ footer {
     justify-content: center;
     align-items: center;
 }
+
+
+
+
+
+
+
+
 
 
 
