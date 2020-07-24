@@ -1,2 +1,2 @@
 # GrupoDevelopers.github.io
-Site do grupo Developers
+Site do [Grupo Developers](https://t.me/devs_brasil)
