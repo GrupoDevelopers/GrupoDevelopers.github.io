@@ -78,6 +78,7 @@ a:hover {
     background: transparent;
 }
 
+
 #open-menu {
     cursor: pointer;
     height: 36px;
@@ -190,6 +191,12 @@ header {
     font-size: 3rem;
     margin-left: 1rem;
     text-shadow: 2px 2px 2px rgb(43, 41, 41);
+    padding-top: 30px;
+}
+
+.box-logo a img:hover {
+    width: 110px;
+    height: 110px;
 }
 
 /* Hero Mobile */
@@ -204,6 +211,10 @@ header {
         font-size: 2rem;
     }
 
+    .box-logo a img:hover {
+        width: 90px;
+        height: 90px;
+    }
 }
 
 /* Sections */
@@ -223,6 +234,10 @@ header {
 }
 
 /* About/Rules Section */
+
+.box-sections {
+    text-align: justify;
+}
 
 .section-about, .section-rules {
     background: #3939b1;
