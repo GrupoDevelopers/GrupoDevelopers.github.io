@@ -13,11 +13,11 @@ body {
 }
 
 h2, h3, p {
-    margin-bottom: 2.5rem;
+    margin-bottom: 2rem;
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: 1.6rem;
 }
 
 h3 {
@@ -225,6 +225,12 @@ header {
     align-items: center;
     min-height: 17rem;
     padding: 2rem;
+}
+
+.site-name-about {
+    font-size: 1.75rem;
+    font-style: italic;
+    color: #383c41;
 }
 
 @media (min-width: 992px){
