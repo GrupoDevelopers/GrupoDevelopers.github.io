@@ -333,28 +333,10 @@
 
 				// Article visible? Hide.
 					if ($body.hasClass('is-article-visible'))
-						$main._hide(true);
+						event.preventDefault();
 
 			});
 
-			$window.on('keyup', function(event) {
-
-				switch (event.keyCode) {
-
-					case 27:
-
-						// Article visible? Hide.
-							if ($body.hasClass('is-article-visible'))
-								$main._hide(true);
-
-						break;
-
-					default:
-						break;
-
-				}
-
-			});
 
 			$window.on('hashchange', function(event) {
 
@@ -370,7 +352,6 @@
 							$main._hide();
 
 					}
-
 				// Otherwise, check for a matching article.
 					else if ($main_articles.filter(location.hash).length > 0) {
 
