@@ -1564,12 +1564,15 @@ input, select, textarea {
 	user-select: none;
 }
 .button.button-primary {
-	background: RGB(62, 160, 163);
-	color: #fff;
+	background: rgb(49, 147, 196);
+	color: #ffffff;
+	line-height: 2;
+	margin: 0 0 1rem 0;
+	letter-spacing: 0.2rem;
 	border: none;
 	box-shadow: none;
-	border-radius: 30px;
-	font-weight: 300 !important;
+	border-radius: 70px;
+	font-weight: 800;
 	position: relative;
 	-moz-transition: all 0.2s ease;
 	-o-transition: all 0.2s ease;
