@@ -1094,6 +1094,7 @@ input, select, textarea {
                 -ms-transform: translateY(0);
                 transform: translateY(0);
                 opacity: 1;
+                border: 0.1px solid rgba(192, 192, 192, 0.35);
             }
 
             #main article .close {
