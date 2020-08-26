@@ -1184,7 +1184,8 @@ input, select, textarea {
 			#header .content p {
 				text-transform: uppercase;
 				letter-spacing: 0.2rem;
-				font-size: 0.8rem;
+				font-weight: 650;
+				font-size: 1rem;
 				line-height: 2;
 			}
 
@@ -1252,7 +1253,7 @@ input, select, textarea {
 			}
 
 			#header .content p {
-				line-height: 1.875;
+				font-weight: 600;
 			}
 
 		}
