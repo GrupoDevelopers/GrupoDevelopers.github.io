@@ -504,6 +504,12 @@ input, select, textarea {
         list-style: disc;
         margin: 0 0 2rem 0;
         padding-left: 1em;
+        display: block;
+        list-style-type: disc;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
     }
 
         ul li {
@@ -666,7 +672,9 @@ input, select, textarea {
     ul.icons {
         cursor: default;
         list-style: none;
-        padding-left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center 
     }
 
         ul.icons li {
